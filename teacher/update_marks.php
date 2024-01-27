@@ -11,8 +11,8 @@ $result = mysqli_query($conn, $sql);
   <!-- Content here -->
   <div class="d-sm-flex align-items-center justify-content-between mb-4 ml-6">
         <h1 class="h3 mb-0 text-gray-800">View Marks</h1>
-        <a href="update_marks.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                class="fas fa-user fa-sm text-white-50"></i> Update Marks </a>
+        <a href="manage_marks.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                class="fas fa-user fa-sm text-white-50"></i> View Marks </a>
     </div>
     <form>
     <div class="col-12 form-row align-items-center">

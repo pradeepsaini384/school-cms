@@ -50,16 +50,11 @@ $totalactivestudents = $rowTotalactiveStudents['total_active_students'];
                                     <div class="col-auto">
                                         <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800"><?php echo $totalStudents; ?></div>
                                     </div>
-                                    <div class="col">
-                                        <div class="progress progress-sm mr-2">
-                                            <div class="progress-bar bg-info" role="progressbar" style="width: 50%"
-                                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
+                                   
                                 </div>
                             </div>
                             <div class="col-auto">
-                                <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                                <i class="fas fa-user fa-2x text-gray-300"></i>
                             </div>
                         </div>
                     </div>
@@ -75,7 +70,7 @@ $totalactivestudents = $rowTotalactiveStudents['total_active_students'];
                                 <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $totalMaleStudents; ?></div>
                             </div>
                             <div class="col-auto">
-                                <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                                <i class="fas fa-user fa-2x text-gray-300"></i>
                             </div>
                         </div>
                     </div>
@@ -91,7 +86,7 @@ $totalactivestudents = $rowTotalactiveStudents['total_active_students'];
                                 <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $totalFemaleStudents; ?></div>
                             </div>
                             <div class="col-auto">
-                                <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                                <i class="fas fa-user fa-2x text-gray-300"></i>
                             </div>
                         </div>
                     </div>
@@ -108,7 +103,7 @@ $totalactivestudents = $rowTotalactiveStudents['total_active_students'];
                                 <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $totalactivestudents; ?></div>
                             </div>
                             <div class="col-auto">
-                                <i class="fas fa-comments fa-2x text-gray-300"></i>
+                                <i class="fas fa-user fa-2x text-gray-300"></i>
                             </div>
                         </div>
                     </div>
@@ -122,10 +117,10 @@ $totalactivestudents = $rowTotalactiveStudents['total_active_students'];
                             <div class="col mr-2">
                                 <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
                                     Total Passout Student</div>
-                                <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">0</div>
                             </div>
                             <div class="col-auto">
-                                <i class="fas fa-comments fa-2x text-gray-300"></i>
+                                <i class="fas fa-user fa-2x text-gray-300"></i>
                             </div>
                         </div>
                     </div>

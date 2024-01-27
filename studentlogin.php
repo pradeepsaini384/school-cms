@@ -6,7 +6,7 @@ function sanitize_input($data) {
     return htmlspecialchars(stripslashes(trim($data)));
 }
 if (isset($_SESSION["email"])) {
-    header("Location: admin/admin_dashboard.php");
+    header("Location: student/dashboard.php");
     exit();
 }
 $error_message = "";
@@ -24,44 +24,33 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $password = sanitize_input($_POST["password"]);
 
-    $sql = "SELECT * FROM users WHERE email = '$email' ";
+    $sql = "SELECT * FROM students WHERE email = '$email' ";
     $result = $conn->query($sql);
   
     if ($result->num_rows == 1) {
         $user = $result->fetch_assoc();
         
         $storedHashedPassword = $user["password"];
-        
-        $_SESSION["role"]=$user["role"];
-        // Check the role of the user
+                // Check the role of the user
         if (password_verify($password, $storedHashedPassword)) {
             // Passwords match, user is authenticated
             // Proceed with login logic (e.g., set session variables, redirect to dashboard, etc.)
             $_SESSION["email"] = $email;
-            $_SESSION["username"] = $user["name"];
-            if ($user["role"] == "super") {
+            $fullname = $user["fname"] ." ". $user["lname"];
+            $_SESSION["username"] = $fullname;
+            $_SESSION["student_id"] = $user["id"];
+            $_SESSION["class_id"] = $user["class_id"];
 
-              
-                header("Location: admin/admin_dashboard.php");
-            } else if ($user["role"] == "management_class"){
-                $_SESSION["role"] = $user["role"];
+            header("Location: student/dashboard.php");
+          
             
-                header("Location: management_class/dashboard.php");
-            }
-             else if ($user["role"] == "ExamManager"){
-                $_SESSION["role"] = $user["role"];
-            
-                header("Location: management_exam/dashboard.php");
-            }
-            else{
-            $error_message = "Invalid Role";
         }
       
     }
     else{
         $error_message = "Invalid email or password";
     }
-}}
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -103,7 +92,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <div class="col-lg-6">
                                 <div class="p-5">
                                     <div class="text-center">
-                                        <h1 class="h4 text-gray-900 mb-4">School Admin Login</h1>
+                                        <h1 class="h4 text-gray-900 mb-4">Student Portal</h1>
                                     </div>
                                     <?php
                                     if (isset($error_message)) {

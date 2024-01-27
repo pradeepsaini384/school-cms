@@ -41,9 +41,9 @@ if ($conn->query($sql) === TRUE) {
 
 <div class="container-fluid">
   <div class="d-sm-flex align-items-center justify-content-between mb-4">
-    <h1 class="h3 mb-0 text-gray-800 ">Class Dashboard</h1>
-    <a href="class_view.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-        class="fas fa-user fa-sm text-white-50"></i> class List</a>
+    <h1 class="h3 mb-0 text-gray-800 ">Student Dashboard</h1>
+    <a href="student_detail.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+        class="fas fa-user fa-sm text-white-50"></i> Student List</a>
   </div>
   <div class="container-xl">
     <!-- Content Row -->
