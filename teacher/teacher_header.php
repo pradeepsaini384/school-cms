@@ -317,7 +317,7 @@ session_start();
                         xhr.onreadystatechange = function () {
                             if (xhr.readyState == 4 && xhr.status == 200) {
                                 // Redirect to the login page after successful logout
-                                window.location.href = "../adminlogin.php";
+                                window.location.href = "../teacher_login.php";
                             }
                         };
                         xhr.open("GET", "../logout.php", true);

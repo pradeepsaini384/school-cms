@@ -6,6 +6,7 @@ session_start();
 if (isset($_SESSION["email"])) {
     // Unset all session variables
     if (isset($_SESSION["student_id"])) {
+
         session_unset();
 
     // Destroy the session
