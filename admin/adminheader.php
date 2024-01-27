@@ -23,7 +23,7 @@ if ($userRole === "super") {
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Dashboard</title>
+    <title>Admin Dashboard</title>
 
     <!-- Custom fonts for this template-->
     <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -45,7 +45,7 @@ if ($userRole === "super") {
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
@@ -75,7 +75,7 @@ if ($userRole === "super") {
             </li>
             <li class="nav-item">
                 <a class="nav-link collapsed" href="class_view.php" >
-                    <i class="fas fa-fw fa-user"></i>
+                    <i class="fas fa-fw fa-book"></i>
                     <span>Manage Classes</span>
                 </a>
                 <!-- <div id="collapseSchool" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
@@ -124,7 +124,7 @@ if ($userRole === "super") {
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseEvent"
                     aria-expanded="true" aria-controls="collapseEvent">
-                    <i class="fas fa-fw fa-user"></i>
+                    <i class="fas fa-fw fa-book"></i>
                     <span>Manage events </span>
                 </a>
                 <div id="collapseEvent" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">

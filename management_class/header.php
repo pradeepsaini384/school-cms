@@ -64,7 +64,7 @@ session_start();
                 <!-- <a class="nav-link collapsed py-2" href="">Manage Users</a> -->
                 <a class="nav-link collapsed" href="view_class.php"
                    >
-                    <i class="fas fa-fw fa-user"></i>
+                    <i class="fas fa-fw fa-book"></i>
                     <span>View Classes</span>
                 </a>
                 
@@ -73,21 +73,21 @@ session_start();
                 <!-- <a class="nav-link collapsed py-2" href="">Manage Users</a> -->
                 <a class="nav-link collapsed" href="create_class.php"
                    >
-                    <i class="fas fa-fw fa-user"></i>
+                    <i class="fas fa-fw fa-book"></i>
                     <span>Create Classes</span>
                 </a>
                 
             </li>
             <li class="nav-item">
                 <a class="nav-link collapsed" href="create_timetable.php" >
-                    <i class="fas fa-fw fa-user"></i>
+                    <i class="fas fa-fw fa-book"></i>
                     <span>Create Time Table</span>
                 </a>
                
             </li>
             <li class="nav-item">
                 <a class="nav-link collapsed" href="view_timetable.php" >
-                    <i class="fas fa-fw fa-user"></i>
+                    <i class="fas fa-fw fa-book"></i>
                     <span>View Time Table</span>
                 </a>
                
@@ -95,7 +95,7 @@ session_start();
            
             <li class="nav-item">
                 <a class="nav-link collapsed" href="create_course.php" >
-                    <i class="fas fa-fw fa-user"></i>
+                    <i class="fas fa-fw fa-book-reader"></i>
                     <span>Create Course</span>
                 </a>
                
@@ -103,7 +103,7 @@ session_start();
            
             <li class="nav-item">
                 <a class="nav-link collapsed" href="view_course.php" >
-                    <i class="fas fa-fw fa-user"></i>
+                    <i class="fas fa-fw fa-book-reader"></i>
                     <span>View Course</span>
                 </a>
                
